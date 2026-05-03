@@ -99,13 +99,16 @@ application:
         
     - name: AdguardFilter白名单
       path: https://raw.githubusercontent.com/miaoermua/AdguardFilter/main/whitelist.txt
-        
+    
+    - name: liu50341759
+      path: https://github.com/liu50341759/killad/raw/refs/heads/main/rule/all.txt
+            
   output:
     file_header: |
-      Title: wiz adblock list of ${type}
+      Title: great adblock list of ${type}
       Total Size: ${total}
       Last Modified: ${date}
-      Homepage: https://github.com/ALLOVERleng/ad-filters-subscriber
+      Homepage: https://github.com/chene2025/ad-filters-subscriber
 
     files:
       - name: easylist.txt
@@ -150,6 +153,8 @@ application:
 
       excludes:
         - "edge.microsoft.com"
+        - "public.gensparkspace.com"
+        - "assets.msn.com"
 #        - "metok.sys.miui.com"
-        - "assets.msn.com"# 参考 `application-example.yaml` 并在处添加订阅规则，请注意缩进
+# 参考 `application-example.yaml` 并在处添加订阅规则，请注意缩进
 # Refer to `application-example.yaml` and add subscription rules there，please note the indentation
